@@ -1,21 +1,48 @@
 <html>
-    <head>
-        <title>Weekly Pay Report</title>
-    </head>
-    <body>
-        <h1>Weekly Pay Report</h1>
-        <table border="1" cellpadding="5" cellspacing="0">
+<body>
+    <h1>Weekly Pay Report</h1>
+
+    <!-- Table for Caregiver Data -->
+    <h2>Caregiver Pay Information</h2>
+    <table border="1">
+        <thead>
             <tr>
-                <th>Caregiver</th>
-                <th>Pay</th>
+                <th>Caregiver Name</th>
+                <th>Pay Amount</th>
             </tr>
+        </thead>
+        <tbody>
             {caregiver_rows}
-        </table>
-        <br>
-        <h3>Weekly Totals:</h3>
-        <ul>
+        </tbody>
+    </table>
+
+    <!-- Table for Weekly Totals -->
+    <h2>Weekly Totals</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Week</th>
+                <th>Total Pay</th>
+            </tr>
+        </thead>
+        <tbody>
             {weekly_totals}
-        </ul>
-        <h3>Monthly Total: {monthly_total}</h3>
-    </body>
+        </tbody>
+    </table>
+
+    <!-- Monthly Total -->
+    <h2>Total Monthly Pay</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Monthly Total Pay</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>${monthly_total}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
 </html>
