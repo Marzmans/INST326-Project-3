@@ -8,4 +8,5 @@ Johnny: Unpaid
 Morgan: Unpaid
 Jamie: Unpaid
 
+Weekly Totals: $840.0, $840.0, $840.0, $840.0
 Monthly Total: $3360
